@@ -1,0 +1,7 @@
+1. VGG16+LSTM(Long short term Memory) -- The features would be extracted for each individual frame which would be then passed to the LSTM network for continuous monitoring for fall detection in the time interval of 3 seconds. (since most of the falls does not extend beyond the 3 seconds).
+
+2. 3D Convolutional Neural Networks -- A 3D convolution would be done on the video frames on which our weight matrices would be trained which then can be used to get a probability of the fall.
+
+3. VGG16+Bidirectional LSTM --  This approach uses VGG16 to extract features from the individual frame of the video, the sequence of frame features are then taken into bidirectional LSTM recurrent networks for detection.
+
+Out of these three, what we see is the 2nd method provides the most accurate predictions of Fall. We will train our network using this method.
